@@ -24,7 +24,7 @@ class Song {
                 let formatter = NSNumberFormatter();
                 formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
                 formatter.currencyCode = currency
-                return formatter.stringFromNumber(NSNumber(double: price!))
+                return formatter.stringFromNumber(NSNumber(double: price!))!
             } else {
                 return "Album Only"
             }
